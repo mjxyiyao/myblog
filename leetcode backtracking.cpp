@@ -1,4 +1,4 @@
-Leetcode 51 N-queens
+//Leetcode 51 N-queens
 class Solution {
 public:
     vector<vector<string>> solveNQueens(int n) {
