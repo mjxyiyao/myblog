@@ -3,10 +3,10 @@ class Solution {
 public:
     vector<vector<string>> solveNQueens(int n) {
         vector<vector<string>> res;
-        int dp[n];
+        int dp[n]; //用来记录以前所有行中的列，dp[i]记录的是第i行的第j列
         vector<string> temp(n, string (n, '.'));
         
-        helper(res, temp, dp, 0, n);
+        helper(res, temp, dp, 0, n);//从第0行开始，直到递归到第n行结束
         return res;
          
     }
